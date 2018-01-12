@@ -1,5 +1,5 @@
-angular.module('ngCribs').controller('cribsController', function ($scope){
+angular.module('ngCribs').controller('cribsController', ['$scope', function ($scope) {
         
-        $scope.hello = 'Hello world!';
+        $scope.hello = 'hello world!';
     
-    });
+    }]);
