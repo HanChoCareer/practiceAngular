@@ -1,5 +1,7 @@
-angular.module('ngCribs').controller('cribsController', ['$scope', function ($scope) {
-        
-        $scope.hello = 'hello world!';
-    
-    }]);
+var app = angular.module('ngCribs', []);
+app.controller('cribsController', function ($scope) {
+
+	$scope.hello = "hello world!";
+
+});
+
