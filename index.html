@@ -10,6 +10,12 @@
         <script src="scripts/cribsController.js"></script>
     </head>
     <body ng-controller="cribsController">
-        <h1>{{ hello }} </h1>
+        <div class = "well" ng-repeat="crib in cribs">
+            <h3>{{ crib.address }}</h3>
+            <p><strong>Type: </strong>{{ crib.type}}</p>
+            <p><strong>Description: </strong>{{ crib.description }}</p>
+            <p><strong>Price: </strong>{{ crib.price | currency }}</p>
+
+        </div>
     </body>
 </html> 
